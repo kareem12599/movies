@@ -5,6 +5,7 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
+import com.bumptech.glide.Glide
 import com.example.movieapp.R
 import com.example.movieapp.data.remote.PicData
 import com.example.movieapp.databinding.PicViewItemBinding
@@ -37,7 +38,8 @@ class PicViewHolder(private val binding: PicViewItemBinding) :
     RecyclerView.ViewHolder(binding.root) {
 
     fun bind(picData: PicData) {
-
+        val imageUrl = "http://farm${picData.farm}.staticflickr.com/${picData.server}/${picData.id}_${picData.secret}.jpg"
+        Glide.with(binding.root.context).load(imageUrl).into(binding.pic)
     }
 
     companion object {
