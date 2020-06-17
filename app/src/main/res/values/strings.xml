@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">MovieApp</string>
+    <string name="page_title">Movies</string>
+    <string name="filter">filter</string>
+    <string name="content_description_favorite">filter movies content</string>
+    <string name="search">Search</string>
+    <string name="content_description_search">"search in movies content "</string>
+    <string name="retry">retry</string>
+    <string name="search_hint">Movie Name</string>
+</resources>
