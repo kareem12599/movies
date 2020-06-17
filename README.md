@@ -7,7 +7,7 @@
 -  Using `Room` DataBase as a single source of truth to `MoviePagingSource` which loads data asynchronously
 - `MovieRepository` exposes `Flow` that emits  Flow<PagingData> based on a configuration and a function that defines how to instantiate the PagingSource.
 
--The `MainFragment` observes the changed PagingData and uses the `MovieAdapter` to update the UI 
+- The `MainFragment` observes the changed PagingData and uses the `MovieAdapter` to update the UI 
 
 - `lifecycleScope` responsible for canceling the request when the activity is recreated and `MainFragment` hold a reference to a new `Job` that will be cancelled every time we search for a new query.
 
